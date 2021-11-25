@@ -1,17 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import App from './App'
+import SortByName from './SortByName';
+import SortByAge from './SortByAge'
+
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <>
+  <h1 style={{color: "red"}}>Unsorted Data</h1>
+  <App/>
+  <h1 style = {{color: "Blue"}}>Sorted by Name in Ascending order</h1>
+  <SortByName/>
+  <h1 style = {{color: "green"}}>Sorted by Age in Ascending order</h1>
+  <SortByAge/>
+  </>,
   document.getElementById('root')
-);
+)
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
